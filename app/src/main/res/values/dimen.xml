@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="image_height">250dp</dimen>
+    <dimen name="bar">100dp</dimen>
+</resources>

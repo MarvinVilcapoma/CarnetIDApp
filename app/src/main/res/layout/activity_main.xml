@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:alpha="0.8"
+        android:scaleType="centerCrop"
+        android:src="@drawable/angry" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/barcode">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_companyname"
+            android:textAlignment="center"
+            android:layout_margin="16dp"
+            android:textSize="32sp"
+            android:textColor="#FFFF"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/image_height"
+            android:src="@drawable/foto_carnet_currc3adculum"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFF"
+            android:text="Katy Rojas"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:layout_margin="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="@string/cargo"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/barcode_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bar"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+             />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
